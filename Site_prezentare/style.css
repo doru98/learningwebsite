@@ -1,0 +1,169 @@
+body {
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+/* Navigation bar */
+
+.header{
+    width: 90%;
+    height: 10%;
+    margin: 0 auto;
+}
+
+header {
+    background:whitesmoke;
+    max-height: 85%;
+    width: 100%;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+img.logo {
+    max-width: 150%;
+    height: 150%;
+    float: left;
+   
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav {
+    float: right;
+ 
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 60px;
+    padding-top: 35px;
+
+    position: relative;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content:'';
+    display: block;
+    height: 5px;
+    background-color: #444444;
+
+    position: absolute;
+    top: 0;
+    width: 0;
+    transition: all ease-in-out 100ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+/* FOOTER */
+
+footer{
+    margin-left: 0px;
+}   
+
+.about{
+    
+    margin-left: 20px ;
+    bottom: 0;
+    overflow: hidden;
+    font-size: 20px;
+    color: black;
+    text-align:  left;
+}
+
+.arrange{
+    white-space: pre-wrap;
+}
+
+h2{
+    border-bottom: 1px solid grey ;
+}
+
+.firstPage{
+    text-align: center;
+}
+
+.first{
+    text-align: left;
+    font-size: 20px;
+}
+
+.arrangecols{
+    margin: 0px 0px 200px 200px;
+    width: 60%;
+    padding: 1%;
+}
+
+.col-1{
+    float: left;
+}
+
+.col-2{
+    float: right;
+}
+
+i{
+    white-space: pre-wrap;
+    font-size: 14px;
+    color: grey;
+}
+
+/* Gallery */
+
+.allgallery{
+    margin-left: 10px;
+    width: 100%;
+    float: left;
+}
+
+.gallery img{
+    width: 150px;
+    height:150px;
+    margin: 10px 10px 10px 10px;
+    transition: 0.5s;
+}
+
+.gallery img:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+.gallery{
+    margin-left: 1px;
+    float: left;
+    width: 180px; 
+    
+}
+.gallery:hover{
+    border: 0 solid #777;    
+}
+
+div.text{    
+    padding: 10px;
+    text-align: center;
+    
+}
