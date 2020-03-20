@@ -1,25 +1,41 @@
+html::-webkit-scrollbar{
+    display: none;
+}
+
+html{
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbar-none;
+}
+
+* {
+    font-family: adonis-web, serif;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
 body {
     background-color: white;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 17px;
-    margin-left: 20px;
+
 }
 
 /* Navigation bar */
+header {
+    background:whitesmoke;
+    
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
 
 .header{
     width: 90%;
     height: 10%;
     margin: 0 auto;
+  
 }
 
-header {
-    background:whitesmoke;
-    max-height: 85%;
-    width: 100%;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
-}
 
 img.logo {
     max-width: 150%;
@@ -49,7 +65,7 @@ nav li {
     margin-left: 60px;
     padding-top: 35px;
 
-    position: relative;
+ 
 }
 
 nav a {
@@ -78,13 +94,13 @@ nav a::before {
 nav a:hover::before {
     width: 100%;
 }
-
 /* FOOTER */
 
 footer{
     margin-left: 0px;
 }   
 
+/* PAges */
 .about{
     
     margin-left: 20px ;
@@ -103,7 +119,7 @@ h2{
     border-bottom: 1px solid grey ;
 }
 
-.firstPage{
+#firstPage{
     text-align: center;
 }
 
@@ -159,7 +175,7 @@ i{
     
 }
 .gallery:hover{
-    border: 0 solid #777;    
+    border: 0 solid #777;
 }
 
 div.text{    
@@ -167,3 +183,5 @@ div.text{
     text-align: center;
     
 }
+
+
